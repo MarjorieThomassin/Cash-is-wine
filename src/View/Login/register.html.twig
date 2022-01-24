@@ -1,0 +1,21 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+<form class="box1">
+<a class="link" href="/">Accueil</a>
+<div class="child">
+  <img class="cashiswineImg" src="/assets/images/logocash.png" alt="logo" />
+    <label class="labelRegister" htmlFor="email">Email</label>
+        <input class="inputs" type="email" id="email" name="email" placeholder="cashinwine@mail.com" />
+    <label class="labelmdp" htmlFor="password">Mot de passe</label>
+        <input class="inputs" type="password" id="password" name="password" />
+    <label class="labelmdp" htmlFor="password">Confirmer votre mot de passe</label>
+    <input class="inputs" type="password" id="password" name="password" />
+<div>
+    <button class="button1" type="submit">
+      S'enregistrer
+    </button>
+</div>
+</div>
+</form>
+{% endblock %}

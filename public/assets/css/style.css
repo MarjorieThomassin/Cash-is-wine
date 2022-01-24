@@ -86,6 +86,74 @@ body::before {
     z-index: -1;
     position: fixed;
 }
+.box1{
+    display: grid;
+    place-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.child{
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #e7e7e7;
+    display: grid;
+    place-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.25rem 2rem 2rem 2rem;
+}
+.inputs{
+    border: 1px solid black;
+    font-size:1.5rem;
+    padding: 0.25rem;
+    background-color: white;
+    border-radius: 5px;
+}
+label{
+    font-size:2rem;
+}
+.button1{
+    font-size: 1.50rem;
+    background-color: black;
+    border-radius: 10px;
+    margin-top: 3rem;
+    padding: 0.25rem 0.5rem;
+    color: white;
+}
+.button1:hover {
+    color: #c49e34;
+}
+.labelmdp{
+    margin-top: 5vh;
+}
+
+@media (max-width: 780px) {
+.labelRegister{ 
+    font-size: 1.2rem;
+    font-weight: bold;
+    }
+.labelmdp{
+    font-size: 1.2rem;
+    font-weight: bold;    
+}
+.inputs {
+    font-size: 1rem;
+}
+.cashiswineImg {
+    width: 40%;
+    height: auto;
+}
+.button1{
+    font-size: 1rem;
+    margin-top: 1.5rem;
+}
+.child {
+    margin-top: 1.5rem;
+}
+}
+
 
 @media (min-width : 780px) {
     .container {
