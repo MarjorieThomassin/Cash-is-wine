@@ -1,0 +1,60 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+      <div class="navBar" />
+      <a href="" class="link">Déconnexion</a>
+      <div class="logo">
+        <a href="/" class="linkHome"><img class="logocashprofile" src="/assets/images/logocash.png" alt="logo" /></a>
+      </div>
+      <div class="formContainer">
+        <h1 class="titleWinary">
+          Vinothèque de
+        </h1>
+        <div class="bottleForm">
+              <label class="labelBottle" htmlFor="appellation">Appellation</label>
+              <select class="inputBottle">
+                <option value="">--Veuillez choisir une appellation--</option>
+              </select>
+              <label class="labelBottle" htmlFor="type">Couleur</label>
+              <select class="inputBottle">
+                <option value="">--Veuillez choisir une couleur--</option>
+              </select>
+            
+              <label class="labelBottle" htmlFor="type">Type</label>
+              <select class="inputBottle">
+                <option value="">--Veuillez choisir un type--</option>
+              </select>
+              <label class="labelBottle" htmlFor="year">Millésime</label>
+              <select class="inputBottle">
+                <option value="">--Veuillez choisir un millésime--</option>
+               </select>
+              <label class="labelBottle" htmlFor="medal">
+                Récompense/Médaille
+              </label>
+              <select class="inputBottle">
+                <option value="">--Veuillez choisir une récompense--</option>
+              </select>
+            </div>
+        <div class="etiquetteContainer">
+          <label class="labelImage" htmlFor="labelRecto">Etiquette</label>
+          <input class="inputImage" type="file" id="labelRecto" name="fileFront" placeholder="Ajoutez votre image" />
+          <div class="divtruc">
+            <label class="labelImage" htmlFor="labelVerso">Contre-etiquette</label>
+            <input class="inputImage" type="file" id="labelVerso" name="fileBack" placeholder="Ajoutez votre image" />
+          </div>
+        </div>
+        <div class="btnContainer">
+          <button class="btnBottle" type="submit">
+            Ajouter à la vinothèque
+          </button>
+      </div>
+      </div>
+      <section class="bottleCountContainer" htmlFor="bottleCount">
+        <h1 class="bottleCount">
+          Vous possédez
+         x
+          bouteille(s)
+        </h1>
+      </section>
+
+{% endblock %}
