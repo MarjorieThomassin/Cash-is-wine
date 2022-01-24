@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@200&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+h1 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 2.5rem;
+}
+h2 {
+    font-size: 2.25rem;
+    text-align: center;
+    margin: 1rem;
+}
+.mainh1{
+    display: flex;
+    margin: auto;
+    z-index: 2;
+    color: white;
+}
+.linkEstimate {
+    color: white;
+    padding: 0.25rem 0.5rem;
+    box-shadow: 0 0 0 2px black;
+    border-radius: 5px;
+    margin: 0.5rem;
+    text-decoration: none;
+    background-color: black;
+}
+.link, .dcButton {
+    color: white;
+    padding: 0.25rem 0.5rem;
+    box-shadow: 0 0 0 2px black;
+    border-radius: 5px;
+    margin: 0.5rem;
+    text-decoration: none;
+    background-color: black;
+}
+.link:hover {
+    color: #c49e34;
+}
+.closeButton {
+    display: flex;
+    justify-content: flex-end;
+}
+::placeholder{
+    font-weight: lighter;
+    opacity: 40%;
+}
+.optionValue{
+    font-weight: lighter;
+}
+.Bottleprice div {
+    border: 2px solid #c49e34;
+    border-radius: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: white;
+}
+.Bottleprice p {
+    font-size: 2rem;
+    font-weight: bold;
+    padding:1rem;
+}
+.Bottleprice {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    font-family: 'Spectral', serif;
+}
+
+body::before {
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/bgresponsive.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    position: fixed;
+}
+
+@media (min-width : 780px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        ". . cashiswineImgHome navBar navBar";
+    }
+    .navBar { 
+        margin-top:1rem;
+        grid-area: navBar; 
+        justify-self: flex-end;
+    }
+    .cashiswineImgHome {
+        justify-self: center;
+        height: 25vh;
+        grid-area: cashiswineImgHome;
+    }
+    .background::before {
+        filter: brightness(50%);
+        content: "";
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background-image: url("../images/wineGlass.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .background {
+        display: flex;
+        align-items: center;
+        position: relative;
+        height: 40vh;
+        z-index: 2;
+    }
+    .backgroundh1 {
+        background-color: white;
+        margin-left: 4rem;
+        border-radius: 4px;
+        opacity: 90%;
+        z-index: 1;
+    }
+    .backgroundh1 .linkLogin{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+    .ButtonPanier {
+        font-family: 'Spectral', serif;
+        padding: 5rem;
+        color: white;
+        padding: 0.35rem 0.35rem;
+        box-shadow: 0 0 0 2px black;
+        border-radius: 5px;
+        margin: 0.5rem;
+        text-decoration: none;
+        background-color: black;
+    }
+}
+.box2{
+    display: grid;
+    place-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.child2{
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #e7e7e7;
+    display: grid;
+    place-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.25rem 2rem 2rem 2rem;
+}
+
+.inputs{
+    border: 1px solid lightgrey;
+    font-size:1.5rem;
+    padding: 0.25rem;
+}
+.labelLogin{
+    font-size:2rem;
+}
+.ButtonLogin{
+    font-size: 1.50rem;
+    background-color: black;
+    border-radius: 10px;
+    margin-top: 3rem;
+    padding: 0.25rem 0.5rem;
+    color: white;
+}
+.ButtonLogin:hover {
+    color: #c49e34;
+}
+.labelPassword{
+    margin-top: 5vh;
+    font-size:2rem;
+}
+.inputName, .inputPassword{
+    border: 1px solid black;
+    font-size:1.5rem;
+    padding: 0.25rem;
+    background-color: white;
+    border-radius: 5px;
+}
+.cashiswineImg{
+    width: 150px;
+    height: 170px;
+    margin-bottom: 2rem;
+}
+
+@media (max-width : 780px) {
+    .labelLogin{
+        font-size:1.3rem;
+        font-weight: bold;
+    }
+    .labelPassword{
+        font-size:1.3rem;
+        font-weight: bold;
+    }
+    .inputName, .inputPassword{
+        font-size: 1rem;
+    }
+    .box2{
+        margin-top: 1rem;
+    }
+    .child2{
+        margin-top: 3rem;
+    }
+    .ButtonLogin{
+        font-size: 1.2rem;
+    }
+}
+
+
+@media (max-width : 780px) {
+    .background {
+        display: flex;
+        flex-direction: column-reverse;
+        background-image: url("../images/wineGlass.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 15vh;
+    }
+    .mainh1 {
+        font-size: 1.2rem;
+        color: rgb(255, 255, 255);
+    }
+    .linkLogin {
+        margin-top: 1rem;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .navBar{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .linkEstimate {
+        background-color: white;
+        color: black ;
+        padding: 0.25rem 0.5rem;
+        box-shadow: 0 0 0 2px rgb(0, 0, 0);
+        border-radius: 5px;
+        margin: 0.5rem;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .link{
+        font-weight: bold;
+    }
+    h2 {
+        display: none;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin-top: 1rem;
+    }
+    .cashiswineImgHome{
+        width: 60%;
+        margin: 1rem;
+        padding: 0.5rem;
+        background-color: rgba(255, 255, 255, 0.87);
+    }
+    .Bottleprice div {
+        border: 2px solid #c49e34;
+        border-radius: 10px;
+        font-size: 1rem;
+        font-weight: bold;
+        background-color: white;
+    }
+    .Bottleprice p {
+        font-size: 1rem;
+        font-weight: bold;
+        padding:0.5rem;
+    }
+    .Bottleprice {
+        display: flex;
+        justify-content: center;
+    }
+    .ButtonPanier {
+        font-family: 'Spectral', serif;
+        font-weight: bold;
+        padding: 5rem;
+        color: white;
+        padding: 0.25rem 0.5rem;
+        box-shadow: 0 0 0 2px black;
+        border-radius: 5px;
+        margin: 0.5rem;
+        text-decoration: none;
+        background-color: black;
+    }
+    
+}
