@@ -1,0 +1,19 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+
+<div class="box2">
+    <a class='link' href="/">Accueil</a>
+    <form class="child2">
+        <img class="cashiswineImg" src="/assets/images/logocash.png" alt="logo" />
+        <label class="labelLogin" htmlFor="email">Email</label>
+            <input class="inputName" type="email" id="email" name="email" placeholder="cashinwine@mail.com" />
+        <label class="labelPassword" htmlFor="email">Mot de passe</label>
+            <input class="inputPassword" type="password" id="password" name="password" />
+        <button class="ButtonLogin" type="submit">
+            Connexion
+        </button>
+    </form>
+  </div>
+
+{% endblock %}
